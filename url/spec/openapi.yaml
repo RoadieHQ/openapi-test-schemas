@@ -17,7 +17,13 @@ paths:
       responses:
         "200":
           description: Returns the list of brands
+          content:
+            application/json:
+              schema:
+                $ref: "models.yaml#/components/schemas/DataOptionList"
+        "400":
+          $ref: "models.yaml#/components/responses/ClientError"
         "500":
-          $ref: "https://raw.githubusercontent.com/RoadieHQ/backstage-openapi-ref-example/main/url/spec/models.yaml#/components/responses/ServerError"
+          $ref: "https://github.com/RoadieHQ/backstage-openapi-ref-example/tree/main/url/spec/models.yaml#/components/responses/ServerError"
       tags:
         - Vehicle Search
