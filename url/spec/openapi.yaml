@@ -12,18 +12,4 @@ servers:
 paths:
   /vehicles/brands:
     get:
-      summary: Lists all available brands
-      operationId: vehicleBrands
-      responses:
-        "200":
-          description: Returns the list of brands
-          content:
-            application/json:
-              schema:
-                $ref: "models.yaml#/components/schemas/DataOptionList"
-        "400":
-          $ref: "models.yaml#/components/responses/ClientError"
-        "500":
-          $ref: "https://github.com/RoadieHQ/backstage-openapi-ref-example/tree/main/url/spec/models.yaml"
-      tags:
-        - Vehicle Search
+      $ref: "https://github.com/RoadieHQ/backstage-openapi-ref-example/blob/main/relative/paths/pets/create-pet.yaml"
