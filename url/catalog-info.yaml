@@ -3,8 +3,6 @@ kind: API
 metadata:
   name: url-based-api-vehicle-search
   description: URL based API vehicle search
-  annotations:
-    openapi/ref-basepath: ./spec
 spec:
   type: openapi
   lifecycle: production
