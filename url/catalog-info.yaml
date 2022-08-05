@@ -4,7 +4,7 @@ metadata:
   name: url-based-api-vehicle-search
   description: URL based API vehicle search
   annotations:
-    openapi/ref-basepath: ./spec
+    openapi/ref-basepath: https://github.com/RoadieHQ/backstage-openapi-ref-example/tree/main/url/spec
 spec:
   type: openapi
   lifecycle: production
