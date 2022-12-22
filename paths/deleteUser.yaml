@@ -1,0 +1,17 @@
+post:
+  summary: Delete (Forgot) a user
+  operationId: deleteUser
+  tags:
+    - user
+  requestBody:
+    content:
+      application/json:
+        schema:
+          required:
+            - client_id
+          properties:
+            client_id:
+              type: integer
+  responses:
+    default:
+      description: Unexpected error
